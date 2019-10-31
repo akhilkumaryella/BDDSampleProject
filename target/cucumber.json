@@ -1,0 +1,93 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Search cricket",
+        "description": "",
+        "id": "google-search;search-cricket",
+        "after": [
+          {
+            "result": {
+              "duration": 2320996500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Search.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7119790700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open google URL",
+            "match": {
+              "location": "Search.open_google_URL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 173657700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter \"criket\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "criket",
+                  "offset": 7
+                }
+              ],
+              "location": "Search.enter(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2152704100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click GoogleSearch",
+            "match": {
+              "location": "Search.click_GoogleSearch()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40794000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "cricket results coming",
+            "match": {
+              "location": "Search.cricket_results_coming()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "src/test/resources/featurefiles/Search.feature",
+    "tags": []
+  }
+]
